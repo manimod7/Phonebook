@@ -6,7 +6,7 @@
 #include <fstream>
 #include <unistd.h>
 #include <conio.h>
-#define CHARS 200
+#define CHARS 100
 using namespace std;
 
 struct TrieNode
@@ -120,11 +120,11 @@ void Trie::searchContact(string contact) // search contact in a Phonebook
         cout << "\n\tThe person \"" << contact << "\" was not found in the Phonebook";
         if (similarContacts.size() == 0)
             return;
-        // cout << "\n\tAutoComplete feature :";
-        // cout<<"\n\tDid you mean? ";
-        // for(int i =0;i<similarContacts.size();i++){
-        //     cout << "\n\t" <<similarContacts[i];
-        // }
+        cout << "\n\tAutoComplete feature :";
+        cout<<"\n\tDid you mean? ";
+        for(int i =0;i<similarContacts.size();i++){
+            cout << "\n\t" <<similarContacts[i];
+        }
     }
 }
 bool Trie::isEmptyContact(TrieNode *curr)
