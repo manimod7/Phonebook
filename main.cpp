@@ -1,11 +1,12 @@
-#include <iostream>
-#include <string.h>
-#include <algorithm>
-#include <stdlib.h>
-#include <vector>
+#include<bits/stdc++.h>
+// #include <iostream>
+// #include <string.h>
+// #include <algorithm>
+// #include <stdlib.h>
+// #include <vector>
 #include <fstream>
-#include <unistd.h>
-#include <conio.h>
+// #include <unistd.h>
+// #include <conio.h>
 #define CHARS 100
 using namespace std;
 
@@ -28,7 +29,7 @@ public:
     void insertContact(string s, string number);
     void findContact(string, bool &);
     void searchContact(string);
-    bool autoCompleteContact(TrieNode *root, string s, vector<string> &);
+    void autoCompleteContact(TrieNode *root, string s, vector<string> &);
     bool isEmptyContact(TrieNode *);
     TrieNode *removeUntil(TrieNode *, string, int);
     void remove(string);
@@ -82,7 +83,7 @@ void Trie::findContact(string contact, bool &bb) //find contact in trie
         return;
     }
 }
-bool Trie::autoCompleteContact(TrieNode *temp, string contact, vector<string> &similarContacts) //autocomplete feature
+void Trie::autoCompleteContact(TrieNode *temp, string contact, vector<string> &similarContacts) //autocomplete feature
 {
     TrieNode *curr = temp;
     if (temp->number != "")
