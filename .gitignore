@@ -1,2 +1,6 @@
 main.exe
 main.o
+main
+a.out
+.vscode/
+main.dSYM/

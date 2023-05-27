@@ -1,12 +1,11 @@
-#include<bits/stdc++.h>
-// #include <iostream>
-// #include <string.h>
-// #include <algorithm>
-// #include <stdlib.h>
-// #include <vector>
+#include <iostream>
+#include <string.h>
+#include <algorithm>
+#include <stdlib.h>
+#include <vector>
 #include <fstream>
-// #include <unistd.h>
-// #include <conio.h>
+#include <unistd.h>
+//#include <conio.h>
 #define CHARS 100
 using namespace std;
 
